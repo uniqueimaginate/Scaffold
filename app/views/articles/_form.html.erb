@@ -1,4 +1,6 @@
 <%= form_for(article) do |f| %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+
   <%= f.label :title %>
   <%= f.text_field :title%>
   
